@@ -6,7 +6,8 @@ class Dolistheader extends Component {
             <thead>
                 <tr>
                     <th>Task</th>
-                    <th>Status</th>        
+                    <th>Status</th>
+                    <th>manage</th>        
                 </tr>
             </thead>
         )

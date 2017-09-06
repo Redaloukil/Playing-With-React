@@ -11,7 +11,7 @@ class Dolist extends Component {
         var arr = [];
         var taskArr = this.props.tasks;
         taskArr.map((item , i)=>{
-            arr.push();
+            arr.push(<Taskitem key={i} {...item} />);
         })
        return arr;
     }
@@ -20,7 +20,10 @@ class Dolist extends Component {
             <div>
                 <table>
                     <Dolistheader/>
-                    {this.renderTask()}
+                    <tbody>
+                        {this.renderTask()}
+                    </tbody>
+                    
                 </table>
             </div>
         )
