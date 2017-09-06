@@ -27,8 +27,10 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Dolist tasks={this.state.task}/>
+      <div className="container centered">
+        <div className="App">
+          <Dolist tasks={this.state.task}/>
+        </div>
       </div>
     );
   }

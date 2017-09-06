@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Dolistheader from './header';
 import Taskitem from './taskitem';
+import Addtask from './add-task';
 
 class Dolist extends Component {
     constructor(props){
@@ -18,6 +19,7 @@ class Dolist extends Component {
     render(){
         return(
             <div>
+                <Addtask/>
                 <table>
                     <Dolistheader/>
                     <tbody>
